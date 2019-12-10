@@ -2,3 +2,53 @@
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
+
+.left-eye {
+  animation: move 3s linear infinite;
+}
+
+.right-eye {
+  animation: move 3s linear infinite;
+}
+
+.bear-face:hover .right-ear {
+  transform: translate(0, -10px);
+}
+
+.right-ear {
+  transform: translate(0, 0);
+  transition: all 500ms ease-in-out;
+}
+
+.bear-face:hover .left-ear {
+  transform: translate(0, -10px);
+}
+
+.left-ear {
+  transform: translate(0, 0);
+  transition: all 500ms ease-in-out;
+}
+
+@keyframes move {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(10px, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(-10px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
