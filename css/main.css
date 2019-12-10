@@ -3,28 +3,28 @@
 @-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
 
-.left-eye {
+#left-eye {
   animation: move 3s linear infinite;
 }
 
-.right-eye {
+#right-eye {
   animation: move 3s linear infinite;
 }
 
-.bear-face:hover .right-ear {
+.bear-face:hover #right-ear {
   transform: translate(0, -10px);
 }
 
-.right-ear {
+#right-ear {
   transform: translate(0, 0);
   transition: all 500ms ease-in-out;
 }
 
-.bear-face:hover .left-ear {
+.bear-face:hover #left-ear {
   transform: translate(0, -10px);
 }
 
-.left-ear {
+#left-ear {
   transform: translate(0, 0);
   transition: all 500ms ease-in-out;
 }
